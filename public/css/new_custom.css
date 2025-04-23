@@ -1,0 +1,59 @@
+/* Custom styles for the authentication page */
+
+body {
+    background-color: #f0f4f8; /* Light background color */
+}
+
+.container {
+    max-width: 600px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    background-color: white; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1, h2 {
+    color: #333; /* Darker text color for headings */
+}
+
+button {
+    margin-top: 20px; /* Increased gap between buttons */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    border-radius: 5px; /* Slightly rounded corners */
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Gradient background */
+    color: white; /* White text color */
+    height: 50px; /* Increased height */
+    width: 40%; /* Set width to 50% */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Glow effect on hover */
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select {
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside input fields */
+    width: 100%; /* Full width */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    padding-right: 1px; /* Space between input fields */
+    margin-top: 10px; /* Space above input fields */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+select:focus {
+    border-color: #007bff; /* Change border color on focus */
+}
+
+input[type="checkbox"] {
+    margin-top: 10px; /* Space above checkbox */
+}

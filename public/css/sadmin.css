@@ -1,0 +1,88 @@
+/* Smooth fade-in effect */
+body {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Success message slide-in */
+#successMessage {
+    transform: translateY(-100%);
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Hover effects */
+.btn:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+/* Table responsiveness */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Search box focus effect */
+.search-box:focus {
+    border-color: #ad5921;
+    box-shadow: 0px 0px 10px rgba(173, 89, 33, 0.5);
+    transition: 0.3s;
+}
+
+/* Back button animation */
+.btn-back {
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-back:hover {
+    transform: translateX(-5px);
+}
+
+/* Image zoom effect */
+.hover-zoom {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
+
+/* Image container */
+.image-container {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button animation */
+.btn-animated {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-animated:hover {
+    transform: scale(1.05);
+}

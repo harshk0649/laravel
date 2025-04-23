@@ -1,0 +1,150 @@
+/* 🌟 General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* 🌟 Brand List Container */
+.brand-list-container {
+    max-width: 1200px; /* Increased width */
+    width: 95%;
+    margin: 40px auto; /* Reduced margin from top */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 🌟 Heading */
+h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 🌟 Animated Buttons */
+.btn-animated {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-animated:hover {
+    transform: scale(1.05);
+}
+
+/* 🌟 Back to Dashboard Button */
+.btn-danger {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+    background-color: #dc3545;
+    transform: scale(1.1);
+}
+
+/* 🌟 Add Brand Button */
+.add-brand {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* 🌟 Table Styling */
+.table {
+    width: 100%;
+    table-layout: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+    transition: background 0.3s ease-in-out;
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/* 🌟 Website Column with Tooltip */
+.website-column {
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.website-column a {
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.website-column a:hover {
+    color: #0056b3;
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 300px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: normal;
+    word-wrap: break-word;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 🌟 Brand Logo Animation */
+.brand-logo {
+    transition: transform 0.3s ease-in-out;
+}
+
+.brand-logo:hover {
+    transform: scale(1.2);
+}
+
+/* 🌟 Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
