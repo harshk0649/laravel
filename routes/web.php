@@ -14,7 +14,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CartController;
 
 Route::get('/', function () {
-    return view('dummy');
+    return view('auth');
 });
 Route::get('/home', [HomeController::class, 'index']);
 
